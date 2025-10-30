@@ -43,3 +43,14 @@ This project contains a **String Calculator template** built using React. The pr
 
 - Implement the functionality of the String Calculator following TDD best practices.
 - Resolve accessibility issues in the `App.tsx`.
+
+## My Solution
+
+### String Calculator TDD kata
+
+We have to write the logic for a function which can take a string which contains numbers separated by , or /n and return their sum as the output.
+
+### Basic Functionality
+
+1. should evaluate "" to 0
+2. should evaluate "35" to 35
