@@ -111,3 +111,7 @@ Passing a negative number to stringCalculator will throw an exception “negativ
 | **Textarea missing label**                           | Added `<label htmlFor="numberInput">` and connected it via `aria-describedby` | Ensures screen readers announce the purpose of the input and improves form accessibility.                                                                         |
 | **Image lacked alt text**                            | Added meaningful `alt` description                                            | Provides context to visually impaired users about the image content.                                                                                              |
 | **Calculation result not announced**                 | Added `role="status"` with `aria-live="polite"` to result text                | Screen readers automatically announce result updates without user intervention.                                                                                   |
+
+### Deployment
+
+This project is deployed on [Vercel](https://string-calculator-incubyte-eosin.vercel.app/)
