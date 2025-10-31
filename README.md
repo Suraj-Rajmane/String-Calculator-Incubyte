@@ -50,6 +50,14 @@ This project contains a **String Calculator template** built using React. The pr
 
 We have to write the logic for a function which can take a string which contains numbers separated by , or /n and return their sum as the output.
 
+### TDD Approach
+
+This project was developed following the Test-Driven Development (TDD) cycle:
+
+1. Red: Write a test that fails.
+2. Green: Write the minimum amount of code required to pass the test.
+3. Refactor: Refactor the code while ensuring that all tests still pass. (Remove duplication, Improve naming, Simplify logic, Optimize performance (if needed))
+
 ### Basic Functionality
 
 1. should evaluate "" to 0
