@@ -15,7 +15,7 @@ const App = () => {
       style={{
         padding: "20px",
         backgroundColor: "#fff",
-        color: "#aaa",
+        color: "#222",
         maxWidth: "700px",
         margin: "0 auto",
       }}
@@ -37,17 +37,19 @@ const App = () => {
         onChange={(e) => setInput(e.target.value)}
       />
 
-      <div
+      <button
         onClick={handleCalculate}
         style={{
-          padding: "10px",
+          padding: "10px 20px",
           backgroundColor: "#008cba",
           color: "#fff",
           border: "none",
+          borderRadius: "4px",
+          cursor: "pointer",
         }}
       >
         Calculate
-      </div>
+      </button>
 
       {result !== null && <p style={{ color: "green" }}>Result: {result}</p>}
 
