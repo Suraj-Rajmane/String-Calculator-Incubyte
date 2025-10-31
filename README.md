@@ -93,3 +93,7 @@ Passing a negative number to stringCalculator will throw an exception “negativ
 ### Numbers bigger than 1000 should be ignored
 
 1. should evaluate `"2,1001"` to `2`
+
+### Delimiters can be of any length
+
+1. should evaluate `"//***\n1***2***3"` to `6`
