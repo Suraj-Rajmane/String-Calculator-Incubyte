@@ -1,10 +1,13 @@
 const stringCalculator = (input: string) => {
-  // Case : Empty String
-  if (!input) {
-    return 0;
-  }
+  // For single number or empty string split operation will return an array with single element hence we don't need to worry.
+  const numbers = input.split(",");
 
-  return Number(input);
+  const result = numbers.reduce(
+    (accumulator, currentValue) => accumulator + Number(currentValue),
+    0
+  );
+
+  return result;
 };
 
 export default stringCalculator;

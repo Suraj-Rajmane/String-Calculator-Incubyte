@@ -60,5 +60,10 @@ This project was developed following the Test-Driven Development (TDD) cycle:
 
 ### Basic Functionality
 
-1. should evaluate "" to 0
-2. should evaluate "35" to 35
+1. should evaluate `""` to `0` (Empty String)
+2. should evaluate `"35"` to `35` (Single Number)
+
+### Comma Separator
+
+1. should evaluate `"1,2"` to `3` (Two Numbers)
+2. should evaluate `"1,2,3,4,5'` to `15` (Multiple Numbers)

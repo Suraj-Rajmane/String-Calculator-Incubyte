@@ -10,3 +10,13 @@ describe("Basic Functionality", () => {
     expect(stringCalculator("35")).toBe(35);
   });
 });
+
+describe("Comma Separator", () => {
+  it("should evaluate '1,2' to 3", () => {
+    expect(stringCalculator("1,2")).toBe(3);
+  });
+
+  it("should evaluate '1,2,3,4,5' to 15", () => {
+    expect(stringCalculator("1,2,3,4,5")).toBe(15);
+  });
+});
