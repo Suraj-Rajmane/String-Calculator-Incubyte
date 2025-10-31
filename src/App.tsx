@@ -11,7 +11,15 @@ const App = () => {
   };
 
   return (
-    <div style={{ padding: "20px", backgroundColor: "#fff", color: "#aaa" }}>
+    <main
+      style={{
+        padding: "20px",
+        backgroundColor: "#fff",
+        color: "#aaa",
+        maxWidth: "700px",
+        margin: "0 auto",
+      }}
+    >
       <img
         src="https://images.unsplash.com/photo-1594352161389-11756265d1b5?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         width={600}
@@ -46,7 +54,7 @@ const App = () => {
       <div role="alert">
         <p>Make sure you enter numbers correctly!</p>
       </div>
-    </div>
+    </main>
   );
 };
 

@@ -30,13 +30,13 @@ This project contains a **String Calculator template** built using React. The pr
 3. **Run the Application**
 
    ```bash
-   npm start
+   npm run dev
    ```
 
 4. **Run Tests**
 
    ```bash
-   npm test
+   npm run test
    ```
 
 ## Task for Candidates
@@ -97,3 +97,12 @@ Passing a negative number to stringCalculator will throw an exception “negativ
 ### Delimiters can be of any length
 
 1. should evaluate `"//***\n1***2***3"` to `6`
+
+## Part-2 : Accessibility Improvements (A11y)
+
+### Key Improvements Made
+
+| Issue                                                | Fix                                                                | Reason                                                                                                                                                            |
+| ---------------------------------------------------- | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Non-semantic `<div>` container for entire app**    | Replaced with semantic `<main>` tag                                | Defines the main content region, helping screen readers identify where the core content starts. Improves navigation for assistive technologies using “landmarks.” |
+| **Content spanned full screen width (hard to read)** | Added `maxWidth: "700px"` and `margin: "0 auto"` to center content | Reduces line length for better readability (60–80 characters per line recommended). Improves focus and comfort for users with visual or cognitive impairments.    |
