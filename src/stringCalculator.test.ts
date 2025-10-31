@@ -20,3 +20,15 @@ describe("Comma Separator", () => {
     expect(stringCalculator("1,2,3,4,5")).toBe(15);
   });
 });
+
+describe("Newline Separator", () => {
+  it("should evaluate '1\n2\n3' to 6", () => {
+    expect(stringCalculator("1\n2\n3")).toBe(6);
+  });
+});
+
+describe("Mixed Separator(, and \n)", () => {
+  it("should evaluate '1\n2,3\n4' to 10", () => {
+    expect(stringCalculator("1\n2,3\n4")).toBe(10);
+  });
+});

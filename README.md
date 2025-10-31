@@ -48,7 +48,7 @@ This project contains a **String Calculator template** built using React. The pr
 
 ### String Calculator TDD kata
 
-We have to write the logic for a function which can take a string which contains numbers separated by , or /n and return their sum as the output.
+We have to write the logic for a function which can take a string which contains numbers separated by , or \n and return their sum as the output.
 
 ### TDD Approach
 
@@ -67,3 +67,11 @@ This project was developed following the Test-Driven Development (TDD) cycle:
 
 1. should evaluate `"1,2"` to `3` (Two Numbers)
 2. should evaluate `"1,2,3,4,5'` to `15` (Multiple Numbers)
+
+### Newline Separator
+
+1. should evaluate `"1\n2\n3"` to `6`
+
+### Mixed Separator (, and \n)
+
+1. should evaluate `"1\n2,3\n4"` to `10`
