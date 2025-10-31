@@ -82,3 +82,10 @@ To change a delimiter, the beginning of the string will contain a separate line 
 `"//[delimiter]\n[numbers…]"`
 
 1. should evaluate `"//;\n1;2;3;4"` to `10`
+
+### Negative numbers are not allowed
+
+Passing a negative number to stringCalculator will throw an exception “negatives not allowed” => and the negative numbers that were passed.
+
+1. `"-1,-2"` should throw an exception `"negatives not allowed => -1"`
+1. `"1,-2,3,-4"` should throw an exception `"negatives not allowed => -2,-4"`

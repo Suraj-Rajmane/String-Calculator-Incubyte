@@ -38,3 +38,17 @@ describe("Custom Separator", () => {
     expect(stringCalculator("//;\n1;2;3;4")).toBe(10);
   });
 });
+
+describe("Negative numbers are not allowed", () => {
+  it("when one negative number is added", () => {
+    expect(() => stringCalculator("-1,2")).toThrowError(
+      "negatives not allowed => -1"
+    );
+  });
+
+  it("when multiple negative numbers are added", () => {
+    expect(() => stringCalculator("1,-2,3,-4")).toThrowError(
+      "negatives not allowed => -2,-4"
+    );
+  });
+});

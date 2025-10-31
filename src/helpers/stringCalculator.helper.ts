@@ -14,8 +14,26 @@ export const getNumbersArray = (input: string) => {
   return numbers;
 };
 
-export const calculateSum = (numbers: string[]) =>
-  numbers.reduce(
+export const calculateSum = (numbers: string[]) => {
+  const negatives: number[] = [];
+
+  // Convert all strings to numbers and collect negatives
+  const numbersArray = numbers.map((element) => {
+    const num = Number(element);
+    if (num < 0) {
+      negatives.push(num);
+    }
+    return num;
+  });
+
+  // If there are negatives, throw an error
+  if (negatives.length > 0) {
+    throw new Error(`negatives not allowed => ${negatives.join(",")}`);
+  }
+
+  // Otherwise, return the sum
+  return numbersArray.reduce(
     (accumulator, currentValue) => accumulator + Number(currentValue),
     0
   );
+};
