@@ -67,7 +67,15 @@ const App = () => {
         Calculate
       </button>
 
-      {result !== null && <p style={{ color: "green" }}>Result: {result}</p>}
+      {result !== null && (
+        <p
+          style={{ color: "green", fontWeight: "bold", marginTop: "10px" }}
+          role="status"
+          aria-live="polite"
+        >
+          Result: {result}
+        </p>
+      )}
 
       <div role="alert">
         <p>Make sure you enter numbers correctly!</p>
