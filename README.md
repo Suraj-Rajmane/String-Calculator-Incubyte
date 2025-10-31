@@ -46,17 +46,17 @@ This project contains a **String Calculator template** built using React. The pr
 
 ## My Solution
 
-### String Calculator TDD kata
+## Part-1 : String Calculator TDD kata
 
-We have to write the logic for a function which can take a string which contains numbers separated by , or \n and return their sum as the output.
+We have to write the logic for a function which can take a string which contains numbers separated by , or \n or custom delimiter and return their sum as the output.
 
 ### TDD Approach
 
 This project was developed following the Test-Driven Development (TDD) cycle:
 
-1. Red: Write a test that fails.
-2. Green: Write the minimum amount of code required to pass the test.
-3. Refactor: Refactor the code while ensuring that all tests still pass. (Remove duplication, Improve naming, Simplify logic, Optimize performance (if needed))
+1. **Red**: Write a test that fails.
+2. **Green**: Write the minimum amount of code required to pass the test.
+3. **Refactor**: Refactor the code while ensuring that all tests still pass. (Remove duplication, Improve naming, Simplify logic, Optimize performance (if needed))
 
 ### Basic Functionality
 
