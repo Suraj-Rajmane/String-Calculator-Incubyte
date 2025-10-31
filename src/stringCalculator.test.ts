@@ -52,3 +52,9 @@ describe("Negative numbers are not allowed", () => {
     );
   });
 });
+
+describe("Numbers bigger than 1000 should be ignored", () => {
+  it("should evaluate '2,1001' to 2", () => {
+    expect(stringCalculator("2,1001")).toBe(2);
+  });
+});

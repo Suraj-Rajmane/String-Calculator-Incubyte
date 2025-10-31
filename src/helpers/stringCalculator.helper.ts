@@ -32,8 +32,10 @@ export const calculateSum = (numbers: string[]) => {
   }
 
   // Otherwise, return the sum
-  return numbersArray.reduce(
-    (accumulator, currentValue) => accumulator + Number(currentValue),
-    0
-  );
+  return numbersArray.reduce((accumulator, currentValue) => {
+    if (currentValue > 1000) {
+      return accumulator;
+    }
+    return accumulator + currentValue;
+  }, 0);
 };
