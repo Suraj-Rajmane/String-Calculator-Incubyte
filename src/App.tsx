@@ -30,8 +30,23 @@ const App = () => {
 
       <h1 style={{ fontSize: "20px" }}>Enter numbers</h1>
 
+      <label
+        htmlFor="numberInput"
+        style={{ display: "block", fontWeight: "bold", marginTop: "10px" }}
+      >
+        Enter numbers
+      </label>
+
       <textarea
-        style={{ margin: "10px 0", color: "#aaa" }}
+        id="numberInput"
+        name="numberInput"
+        style={{
+          margin: "10px 0",
+          color: "#000",
+          width: "100%",
+          minHeight: "100px",
+          fontSize: "16px",
+        }}
         placeholder="Enter numbers"
         value={input}
         onChange={(e) => setInput(e.target.value)}
