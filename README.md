@@ -75,3 +75,10 @@ This project was developed following the Test-Driven Development (TDD) cycle:
 ### Mixed Separator (, and \n)
 
 1. should evaluate `"1\n2,3\n4"` to `10`
+
+### Custom Separator
+
+To change a delimiter, the beginning of the string will contain a separate line that looks like this:
+`"//[delimiter]\n[numbers…]"`
+
+1. should evaluate `"//;\n1;2;3;4"` to `10`

@@ -32,3 +32,9 @@ describe("Mixed Separator(, and \n)", () => {
     expect(stringCalculator("1\n2,3\n4")).toBe(10);
   });
 });
+
+describe("Custom Separator", () => {
+  it("should evaluate '//;\n1;2;3;4' to 10", () => {
+    expect(stringCalculator("//;\n1;2;3;4")).toBe(10);
+  });
+});
