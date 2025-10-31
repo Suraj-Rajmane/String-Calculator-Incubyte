@@ -27,9 +27,7 @@ const App = () => {
         alt="A calculator on a desk representing sum operation"
       />
 
-      <h2>String Calculator</h2>
-
-      <h1 style={{ fontSize: "20px" }}>Enter numbers</h1>
+      <h1>String Calculator</h1>
 
       <label
         htmlFor="numberInput"
@@ -48,7 +46,7 @@ const App = () => {
           minHeight: "100px",
           fontSize: "16px",
         }}
-        placeholder="Enter numbers"
+        placeholder="Example: 1,2,3"
         value={input}
         onChange={(e) => setInput(e.target.value)}
       />
